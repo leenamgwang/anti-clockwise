@@ -8,7 +8,7 @@ let redraw = function () {
     hour = new Date().getHours();
     min = new Date().getMinutes();
     sec = new Date().getSeconds();
-    document.getElementById("hour").style.transform = "rotate(-" + 30 * hour + "deg)";
+    document.getElementById("hour").style.transform = "rotate(-" + ((60 * hour) + min) * 0.5 + "deg)";
     document.getElementById("min").style.transform = "rotate(-" + 6 * min + "deg)";
     document.getElementById("sec").style.transform = "rotate(-" + 6 * sec + "deg)";
 
