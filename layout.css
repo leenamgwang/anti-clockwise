@@ -1,12 +1,11 @@
 body{
     margin-left: 5vw;
-    font-family: 'Josefin Sans', sans-serif;
 }
 .style1{
     color: #333;
 }
 .style1{
-    font-family: 'Century Gothic','Futura',sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
 }
 .style1 h1{
     font-size: 5vmin;
