@@ -1,0 +1,63 @@
+@use ~sass-trigonometry
+body
+    margin-left: 5vw
+#clock
+    position: relative
+    height: 70vmin
+    width: 70vmin
+.base
+    width: 100%
+    height: 100%
+    border-radius: 50%
+.num
+    position: absolute
+    transform: translate(-50%, -50%)
+    font-size: 2rem
+
+=Pos($deg)
+    top: (1-sin($deg))/2
+    left: (1+cos($deg))/2
+.one
+    +Pos(60deg)
+.two
+    +Pos(30deg)
+.three
+    +Pos(0deg)
+.four
+    +Pos(330deg)
+.five
+    +Pos(300deg)
+.six
+    +Pos(270deg)
+.seven
+    +Pos(240deg)
+.eight
+    +Pos(210deg)
+.nine
+    +Pos(180deg)
+.ten
+    +Pos(150deg)
+.eleven
+    +Pos(120deg)
+.twelve
+    +Pos(90deg)
+.hand
+    position: absolute
+$bold-hand: 6px
+$thin-hand: 2px
+$short-hand: 70%
+#hour
+    width: $bold-hand
+    height: $short-hand
+    top: (100% - $short-hand)/2
+    left: 50% - $boldhand / 2
+#min
+    width: $bold-hand
+    height: 100%
+    top: 0%
+    left: 50% - $bold-hand/2
+#sec
+    width: thin-hand
+    height: 100%
+    top: 0%
+    left: 50% - $thin-hand/2
